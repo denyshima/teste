@@ -10,12 +10,12 @@ public class PrimitiveBarrier : MonoBehaviour {
     private Vector3 vec_move = new Vector3();
     private Vector3 vec_scale = new Vector3();
     private Vector3 vec_originScale = new Vector3();
-    public float f_scaleSize;
-    public float f_scaleSpeed;
-    public float f_fallSpeed;
-    public float f_rotSpeed;
-    public float f_fadeSpeed;
-    public int int_startDistance;
+    [Range(0f, 10f)] public float f_scaleSize;
+    [Range(0f, 0.5f)] public float f_scaleSpeed;
+    [Range(0f, 2f)] public float f_fallTime;
+    [Range(0f, 20f)] public float f_rotSpeed;
+    [Range(0f, 0.1f)] public float f_fadeSpeed;
+    [Range(0, 10)] public int int_startDistance;
     public bool bool_isAnimating = true;
     public bool bool_isFadeIn = true;
     public bool bool_isFadeOut = true;
